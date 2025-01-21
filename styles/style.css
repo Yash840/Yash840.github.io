@@ -1,0 +1,366 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Poppins", serif;
+    color : white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color : rgb(255, 255, 255);
+}
+
+section{
+    height: 92vh;
+    padding-top: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(59, 59, 59);
+    color : white;
+    height: 80px;
+    width : 100vw;
+}
+
+.nav-left {
+    padding : 10px;
+}
+
+.nav-right .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap : 20px;
+    padding : 0 40px;
+}
+
+.nav-right .nav-list li{
+    list-style: none;
+    transition : 0.25s ease-in-out;
+    cursor : pointer;
+}
+
+.nav-right .nav-list li:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: 10px;  
+}
+
+.Hero-section, .about-section, .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width : 100vw;
+    height: 92vh;
+}
+
+.Hero-description{
+    width : 50%;
+    margin : 10px 10px 10px 80px ;
+}
+
+.Hero-description .Hero-title{
+    width : 50%;
+    font-size: 2rem;
+}
+
+.Hero-description .Hero-title #name{
+    color : rgb(144, 16, 235);
+    font-size: 4rem;
+    width: 0;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap ;
+}
+
+.Hero-description p{
+    font-size: 1.5rem;
+}
+
+.btn{
+    border : 1px solid rgb(144, 16, 235);
+    background-color: rgb(144, 16, 235);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.Hero-section #Hero-img {
+    height: 400px;
+    width: 400px;
+    border-radius : 50%;
+    border : 1px solid #fff;
+    padding : 10px;
+    object-fit: cover;
+    margin-right: 10vw;
+}
+
+.section-title {
+    font-size : 3rem;
+    margin-left : 12%;
+    text-align: center;
+}
+
+.section-title::after {
+    content : '';
+    display: block;
+    background-color: rgb(144, 16, 235);
+    width : 150px;
+    height: 5px;
+    margin: 10px auto 0;
+    border-radius: 50px;
+}
+
+.about-section {
+    padding-top : 10px;
+    height: 92vh;
+}
+
+.about-right .section-details{
+    right: 7%;
+    width: 50vw;
+    text-align: center;
+    border: 1px solid rgb(144, 16, 235);
+    position: relative;
+    padding: 30px;
+    background-color: rgb(144, 16, 235);
+    color: #fff;
+    border-radius: 100px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-down {
+    justify-self: center;
+    display: block;
+    font-size: 2rem;
+    color : rgb(144, 16, 235);
+    opacity: 0.5;
+}
+
+.skills-section{
+    padding-top : 50px;
+}
+.skills-section .section-title {
+    justify-self: center;
+    margin : auto 10px;
+}
+
+.skills-section .skill-bucket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap : 50px;
+}
+
+.skills-section .skill-bucket .skills {
+    border: 1px solid rgb(144, 16, 235);
+    padding: 10px;
+    width : 200px;
+    height: 260px;
+    border-radius: 25px;
+}
+
+.skills-section .skill-bucket .skills .skill-cat {
+    color : rgb(144, 16, 235);
+}
+
+.skills-section .skill-bucket .skills ul{
+    list-style: none;
+}
+
+.skills-section .skill-bucket .skills li {
+    padding: 0;
+    margin: 10px;
+}
+
+.skills-section .skill-bucket .skills li::after{
+    content : '';
+    display: block;
+    background-color: rgb(144, 16, 235);
+    margin : 10px 10px 0 1px;
+    height: 2px;
+    width : 140px;
+    border-radius: 50px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .service-list {
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+.services .service-list ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 16px;
+    background-color: rgb(144, 16, 235);
+    border : 1px solid white;
+    border-radius : 15px;
+    margin : 20px;
+    padding: 20px;
+    height: 100px;
+    width : 550px;
+    font-size: 1.1rem;
+}
+
+.services .service-list ul li i{
+    font-size: 1.5rem;
+}
+
+.contact-right{
+    margin: auto;
+    width: 100%;
+}
+
+.contact-section .contact-right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section .contact-right form input{
+    border : 1px solid grey;
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-section .contact-right form textarea{
+    height: 100px;
+    resize : vertical;
+    border : 1px solid grey;
+    border-radius : 20px;
+    padding : 10px;
+    margin : 10px;
+    width: 100%;
+}
+
+.contact-left{
+    width: 100%;
+    margin-right: 50px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section .contact-left ul {
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+    padding: 40px;
+    justify-content: center;
+    margin: auto;
+}
+
+.contact-section .contact-left ul li{
+    display: flex;
+    gap : 20px;
+    padding: 10px;
+}
+
+.contact-section a{
+    width: 150px;
+    gap : 10px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+.contact-section a:hover{
+    background-color: #fff;
+    color : rgb(144, 16, 235);
+    transform: scale(1.1);
+}
+
+.back-top{
+    display: block;
+    justify-self: end;
+    background-color: rgb(144, 16, 235);
+    border-radius: 100%;
+    text-align: center;
+    margin : 0 20px 10px 0;
+    font-size : 1.5rem;
+}
+
+.back-top:hover{
+    transform: scale(1.5);
+}
+
+.foot-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+    background-color: rgb(62, 61, 61);
+    width: 100vw;
+}
+
+.foot-section .foot-right{
+    line-height: 20px;
+    padding: 0 40px;
+}
+
+.foot-section .foot-left{
+    padding: 0 40px;
+}
+
+.foot-section .foot-right .social-bar{
+    padding : 10px;
+    display: flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.foot-section .foot-left a{
+    display: flex;
+    align-items: center;
+    gap : 20px;
+}
+
+.foot-right p::after{
+    content: '';
+    background-color: white;
+    height: 2px;
+    margin: 10px auto 0;
+    border-radius: 50px;
+    display: block;
+}
